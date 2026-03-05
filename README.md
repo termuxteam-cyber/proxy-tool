@@ -18,6 +18,6 @@ Easily scrape, check, and organize HTTP, HTTPS, SOCKS4, and SOCKS5 proxies.
 ```bash
 pkg update && pkg upgrade
 pkg install python git
-git clone https://github.com/<your-username>/<repo-name>.git
-cd <repo-name>
+git clone https://github.com/termuxteam-cyber/proxy-tool.git
+cd <proxy-tool>
 python proxy_checker.py
