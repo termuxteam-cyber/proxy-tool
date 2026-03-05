@@ -1,18 +1,33 @@
 # TERMUX TEAM PROXY CHECKER TOOL
 
-A professional **Proxy Scraper & Checker** tool for Termux.  
-Easily scrape, check, and organize HTTP, HTTPS, SOCKS4, and SOCKS5 proxies.
+A simple and fast **Proxy Scraper & Checker** tool for Termux written in Python.
+
+This tool allows users to scrape free proxies from multiple online sources and check whether they are **LIVE or DEAD**.
 
 ## Features
 
-- 🔹 **Proxy Scraper**: Grab fresh proxies from multiple online sources.
-- 🔹 **Proxy Checker**: Test live/dead status for HTTP, HTTPS, SOCKS4, and SOCKS5 proxies.
-- 🔹 **Speed Checker**: Measure latency of proxies.
-- 🔹 **Country Checker**: Identify the country and ISP of a proxy.
-- 🔹 **Port Scanner**: Scan open ports on a target IP.
-- 🔹 **Live Proxy Display**: View all working proxies in real-time.
-- 🔹 **Result Files**: Saves live proxies into `live.txt`, and can separate by type (`http.txt`, `https.txt`, `socks4.txt`, `socks5.txt`).
+- 🔹 **Proxy Scraper**
+  - Collects fresh proxies from multiple GitHub proxy sources.
+  - Automatically saves them into `proxies.txt`.
 
+- 🔹 **Proxy Checker**
+  - Checks proxies using multi-threading.
+  - Detects **LIVE** and **DEAD** proxies.
+
+- 🔹 **Auto Result Save**
+  - Working proxies are automatically saved into `live.txt`.
+
+- 🔹 **Fast Checking**
+  - Uses ThreadPoolExecutor for faster proxy checking.
+
+## Installation
+
+```bash
+pkg update && pkg upgrade
+pkg install python git
+git clone https://github.com/yourusername/yourrepo.git
+cd yourrepo
+python tool.py
 ## Installation
 
 ```bash
